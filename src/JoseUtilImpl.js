@@ -68,8 +68,8 @@ export default function getJoseUtil({ jws, KeyUtil, X509, crypto, hextob64u, b64
                 return Promise.reject(new Error("issuer was not provided"));
             }
             if (payload.iss !== issuer) {
-                Log.error("JoseUtil._validateJwt: Invalid issuer in token. payload.iss = ", payload.iss, ", issuer = ", issuer );
-                return Promise.reject(new Error("Invalid issuer in token: " + payload.iss));
+                Log.error("AAAAAA JoseUtil._validateJwt: Invalid issuer in token. payload.iss = ", payload.iss, ", issuer = ", issuer );
+                return Promise.reject(new Error("AAAAAA Invalid issuer in token: " + payload.iss));
             }
 
             if (!payload.aud) {
